@@ -25,3 +25,7 @@ ehthumbs.db
 
 # Logs
 *.log
+
+# Trained deep learning models
+models/*.h5
+models/*.keras
