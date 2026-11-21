@@ -1145,6 +1145,17 @@ For a reproducible experiment, record the following alongside each training/eval
 The repository includes `outputs/training_history.csv`, `models/config.json`, and `test_cases/test_results.csv` to document the supplied run and current functional-test outcomes.
 
 ---
+
+<a id="acknowledgements"></a>
+## 🙏 Acknowledgements
+
+- **AT&T Laboratories Cambridge** for the ORL Database of Faces used in the project experiments.
+- The TensorFlow/Keras team for the deep-learning framework.
+- The OpenCV community for computer-vision utilities, Haar Cascade support, and YuNet integration.
+- The Streamlit team for the interactive application framework.
+  
+---
+
 ## Author
 
 **Anubhab Samantaray**
@@ -1156,20 +1167,11 @@ Computer Science & Engineering — Artificial Intelligence and Machine Learning
 
 ---
 
-<a id="acknowledgements"></a>
-## 🙏 Acknowledgements
-
-- **AT&T Laboratories Cambridge** for the ORL Database of Faces used in the project experiments.
-- The TensorFlow/Keras team for the deep-learning framework.
-- The OpenCV community for computer-vision utilities, Haar Cascade support, and YuNet integration.
-- The Streamlit team for the interactive application framework.
-- 
----
-
 <div align="center">
 
-### Built with Python, Deep Learning & Computer Vision
+**If you find this project useful, consider giving the repository a star.**
 
-**DeepFace SNN — Learning facial similarity through Siamese metric learning.**
+*Built as an academic deep learning project on image denoising and comparative autoencoder evaluation.*
 
 </div>
+
