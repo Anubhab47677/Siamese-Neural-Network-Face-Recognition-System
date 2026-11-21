@@ -1,0 +1,13 @@
+Test Case ID,Test Description,Input,Expected Output,Actual Output,Status
+TC01,Load face dataset,dataset/att_faces,Images and labels loaded,"400 images, 40 people, X(400, 112, 92, 1)",Pass
+TC02,Generate positive pairs,Same-class images,Both images belong to same person (label=1),"270 positive pairs, all same identity: True",Pass
+TC03,Generate negative pairs,Different-class images,Images belong to different people (label=0),"270 negative pairs, all different identity: True",Pass
+TC04,Generate feature vectors,One face image,128-dimensional vector,"shape (1, 128)",Pass
+TC05,Calculate Euclidean distance,8 image pairs,One distance per pair,"output shape (8, 1)",Pass
+TC06,Train Siamese model,Training pairs,Loss and accuracy recorded,"28 epochs, final loss 0.0110, acc 0.9896",Pass
+TC07,Detect a face,30 test-person frames,Face bounding box generated,face found in 80% of frames,Pass
+TC08,Register a new user,5 face frames,Reference face representation stored,✅ User 'TC User' (ID: T01) registered successfully with 5 face samples | embeddings in DB: 5,Pass
+TC09,Recognise registered user,Probe images of registered people,User recognised,13/15 recognised (87%),Pass
+TC10,Test an unknown user,Images of unregistered people,Unknown user displayed,20/30 rejected (67%),Fail
+TC11,No face in webcam frame,Random-noise frame,Appropriate message displayed,NO_FACE: No face detected. Please look at the camera.,Pass
+TC12,Multiple faces in frame,Two people side by side,System handles the situation appropriately,MULTIPLE_FACES: 2 faces detected - each face verified separately.,Pass
