@@ -28,33 +28,33 @@
 
 ## 📌 Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Problem Statement](#-problem-statement)
-- [Key Features](#-key-features)
-- [Application Interface](#-application-interface)
-- [System Architecture](#-system-architecture)
-- [Recognition Pipeline](#-recognition-pipeline)
-- [Siamese Neural Network](#-siamese-neural-network)
-- [Face Detection & Preprocessing](#-face-detection--preprocessing)
-- [Identity Enrollment & Database](#-identity-enrollment--database)
-- [Dataset](#-dataset)
-- [Experimental Results](#-experimental-results)
-- [Functional Testing](#-functional-testing)
-- [Technology Stack](#-technology-stack)
-- [Repository Structure](#-repository-structure)
-- [Installation](#-installation)
-- [Running the Application](#-running-the-application)
-- [Training the Model](#-training-the-model)
-- [Command-Line Usage](#-command-line-usage)
-- [Configuration](#-configuration)
-- [Model Artifacts](#-model-artifacts)
-- [Limitations & Future Improvements](#-limitations--future-improvements)
-- [Privacy & Security Considerations](#-privacy--security-considerations)
-- [Reproducibility](#-reproducibility)
-- [Acknowledgements](#-acknowledgements)
-
+- [Project Overview](#project-overview)
+- [Problem Statement](#problem-statement)
+- [Key Features](#key-features)
+- [Application Interface](#application-interface)
+- [System Architecture](#system-architecture)
+- [Recognition Pipeline](#recognition-pipeline)
+- [Siamese Neural Network](#siamese-neural-network)
+- [Face Detection & Preprocessing](#face-detection-preprocessing)
+- [Identity Enrollment & Database](#identity-enrollment-database)
+- [Dataset](#dataset)
+- [Experimental Results](#experimental-results)
+- [Functional Testing](#functional-testing)
+- [Technology Stack](#technology-stack)
+- [Repository Structure](#repository-structure)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Training the Model](#training-the-model)
+- [Command-Line Usage](#command-line-usage)
+- [Configuration](#configuration)
+- [Model Artifacts](#model-artifacts)
+- [Limitations & Future Improvements](#limitations-future-improvements)
+- [Privacy & Security Considerations](#privacy-security-considerations)
+- [Reproducibility](#reproducibility)
+- [Acknowledgements](#acknowledgements)
 ---
 
+<a id="project-overview"></a>
 ## 🎯 Project Overview
 
 Traditional image-classification systems generally learn a fixed set of classes. A face verification system has a different requirement: it must compare two facial observations and estimate whether they belong to the same person, including identities that were not part of the model's training identities.
@@ -79,6 +79,7 @@ The trained shared CNN is reused as an embedding extractor during enrollment and
 7. Support multiple faces in a single image and display per-face verification details.
 8. Provide a web interface for enrollment, recognition, analytics, directory management, and functional testing.
 
+<a id="problem-statement"></a>
 ## 🧩 Problem Statement
 
 A practical face verification workflow must handle variations in lighting, facial expression, head pose, image quality, and the number of people visible in a frame. It must also distinguish registered identities from people who have not been enrolled.
@@ -87,6 +88,7 @@ The project implements a metric-learning-based approach in which the model learn
 
 The implementation is an academic prototype based on the AT&T/ORL face dataset. Its reported test and integration results should not be interpreted as production-grade biometric performance.
 
+<a id="key-features"></a>
 ## ✨ Key Features
 
 | Feature | Implementation |
@@ -120,6 +122,7 @@ The application exposes the following pages through its sidebar:
 
 ---
 
+<a id="application-interface"></a>
 ## 🖥️ Application Interface
 
 The following screenshots show the actual Streamlit application. Keep the image files in the repository's root-level `assets/` directory and preserve the filenames shown below so GitHub can render them correctly.
@@ -195,6 +198,7 @@ The live verification page accepts a webcam snapshot or an uploaded portrait/gro
 
 ---
 
+<a id="system-architecture"></a>
 ## 🏗️ System Architecture
 
 The system is organized into five functional layers.
@@ -244,6 +248,7 @@ flowchart TD
 | Identity services | Enrollment, gallery consistency checks and recognition | `onboarding.py`, `face_recognition_system.py` |
 | Persistence | User metadata, embeddings and reference-image files | `database.py` |
 
+<a id="recognition-pipeline"></a>
 ## 🔄 Recognition Pipeline
 
 A submitted frame is processed through the following stages.
@@ -309,6 +314,7 @@ The closest gallery match is compared with the active threshold. The system retu
 
 ---
 
+<a id="siamese-neural-network"></a>
 ## 🧠 Siamese Neural Network
 
 ### Why a Siamese architecture?
@@ -418,6 +424,7 @@ The checked-in `outputs/training_history.csv` contains 28 recorded epochs. The e
 
 ---
 
+<a id="face-detection-preprocessing"></a>
 ## 📷 Face Detection & Preprocessing
 
 ### YuNet detector
@@ -477,6 +484,7 @@ CLAHE is used to improve local contrast before feature extraction. The training/
 
 ---
 
+<a id="identity-enrollment-database"></a>
 ## 👤 Identity Enrollment & Database
 
 ### Enrollment workflow
@@ -530,6 +538,7 @@ The reference images are stored separately in folders named after each user ID. 
 
 ---
 
+<a id="dataset"></a>
 ## 🗂️ Dataset
 
 The project uses the **AT&T Database of Faces**, commonly known as the **ORL Face Database**.
@@ -599,6 +608,7 @@ The generated set is balanced by constructing an equal number of negative pairs 
 
 ---
 
+<a id="experimental-results"></a>
 ## 📊 Experimental Results
 
 The values in this section are taken from the project's checked-in training history, configuration, dashboard code, and functional test report. Training metrics, offline pair-evaluation indicators, and end-to-end integration tests measure different things and are therefore reported separately.
@@ -672,6 +682,7 @@ The archive includes a composite evaluation figure and a PCA visualization of fa
 
 ---
 
+<a id="functional-testing"></a>
 ## 🧪 Functional Testing
 
 The project includes 12 documented integration/functional test cases in `test_cases/test_results.csv`.
@@ -705,6 +716,7 @@ This result is important when interpreting the project: successful recognition o
 
 ---
 
+<a id="technology-stack"></a>
 ## 🧰 Technology Stack
 
 | Category | Technologies |
@@ -745,6 +757,7 @@ The project was developed with a Python 3.13 environment (as indicated by the ar
 
 ---
 
+<a id="repository-structure"></a>
 ## 📁 Repository Structure
 
 ```text
@@ -865,6 +878,7 @@ Face_Recognition_Project/
 
 ---
 
+<a id="installation"></a>
 ## ⚙️ Installation
 
 ### 1. Clone the repository
@@ -921,6 +935,7 @@ The Streamlit app loads the trained Siamese model and detector from these paths.
 
 ---
 
+<a id="running-the-application"></a>
 ## 🚀 Running the Application
 
 From the project root, activate the virtual environment and run:
@@ -954,6 +969,7 @@ The Streamlit camera input requests permission through the browser. If camera ca
 
 ---
 
+<a id="training-the-model"></a>
 ## 🏋️ Training the Model
 
 The project includes a training script that loads the ORL dataset, performs an identity-wise split, creates balanced pairs, builds the Siamese network, trains it, and saves the resulting model.
@@ -983,6 +999,7 @@ The checked-in CSV is the recorded run included with this archive. Running train
 
 ---
 
+<a id="command-line-usage"></a>
 ## 🖥️ Command-Line Usage
 
 ### Face detection
@@ -1005,6 +1022,7 @@ The command-line demonstrations use OpenCV camera capture; the Streamlit applica
 
 ---
 
+<a id="configuration"></a>
 ## 🎚️ Configuration
 
 ### Model configuration — `models/config.json`
@@ -1053,6 +1071,7 @@ A lower threshold is stricter and may reject more unknown users, but it can also
 
 ---
 
+<a id="model-artifacts"></a>
 ## 📦 Model Artifacts
 
 | File | Description |
@@ -1065,6 +1084,7 @@ The Siamese model file is approximately **214 MB** in the supplied archive. The 
 
 ---
 
+<a id="limitations-future-improvements"></a>
 ## ⚠️ Limitations & Future Improvements
 
 The current implementation is a functional academic prototype. The included test report and validation history identify several areas that should be addressed before any real-world deployment.
@@ -1093,6 +1113,7 @@ The current implementation is a functional academic prototype. The included test
 
 ---
 
+<a id="privacy-security-considerations"></a>
 ## 🔐 Privacy & Security Considerations
 
 Face images and face embeddings are sensitive biometric data. The supplied archive contains a local SQLite database and enrolled reference-face images. Before publishing or sharing the repository:
@@ -1108,6 +1129,7 @@ The model and test results in this repository do not establish resistance to spo
 
 ---
 
+<a id="reproducibility"></a>
 ## 🔁 Reproducibility
 
 For a reproducible experiment, record the following alongside each training/evaluation run:
@@ -1124,6 +1146,7 @@ The repository includes `outputs/training_history.csv`, `models/config.json`, an
 
 ---
 
+<a id="acknowledgements"></a>
 ## 🙏 Acknowledgements
 
 - **AT&T Laboratories Cambridge** for the ORL Database of Faces used in the project experiments.
