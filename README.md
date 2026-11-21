@@ -1145,6 +1145,16 @@ For a reproducible experiment, record the following alongside each training/eval
 The repository includes `outputs/training_history.csv`, `models/config.json`, and `test_cases/test_results.csv` to document the supplied run and current functional-test outcomes.
 
 ---
+## Author
+
+**Anubhab Samantaray**
+
+- GitHub: [@Anubhab47677](https://github.com/Anubhab47677)
+- LinkedIn: [Anubhab Samantaray](https://www.linkedin.com/in/anubhab-samantaray/)
+
+Computer Science & Engineering — Artificial Intelligence and Machine Learning
+
+---
 
 <a id="acknowledgements"></a>
 ## 🙏 Acknowledgements
@@ -1153,13 +1163,7 @@ The repository includes `outputs/training_history.csv`, `models/config.json`, an
 - The TensorFlow/Keras team for the deep-learning framework.
 - The OpenCV community for computer-vision utilities, Haar Cascade support, and YuNet integration.
 - The Streamlit team for the interactive application framework.
-
-### Academic project information
-
-The application source identifies this work as a laboratory project for **CSE 4192 — Machine Learning Projects with Python**, associated with the **Institute of Technical Education and Research (ITER), Siksha 'O' Anusandhan, Bhubaneswar, Odisha**.
-
-The source file credits the project authors as Rishav Raj, Saptorshi Kumar Paul, Anubhab Samantaray, and Suprava Pattanayak.
-
+- 
 ---
 
 <div align="center">
