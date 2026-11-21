@@ -1171,7 +1171,7 @@ Computer Science & Engineering — Artificial Intelligence and Machine Learning
 
 **If you find this project useful, consider giving the repository a star.**
 
-*Built as an academic deep learning project on image denoising and comparative autoencoder evaluation.*
+*Built as an academic deep learning project on Siamese-Neural-Network-Face-Recognition-System.*
 
 </div>
 
