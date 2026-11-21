@@ -12,17 +12,17 @@
 
 <p>
 
-  <img src="https\://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python" />
 
-  <img src="https\://img.shields.io/badge/TensorFlow-Keras-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/TensorFlow-Keras-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow" />
 
-  <img src="https\://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv&logoColor=white" alt="OpenCV" />
 
-  <img src="https\://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit" />
 
-  <img src="https\://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white" alt="SQLite" />
+  <img src="https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white" alt="SQLite" />
 
-  <img src="https\://img.shields.io/badge/Model-Siamese%20CNN-blueviolet" alt="Siamese CNN" />
+  <img src="https://img.shields.io/badge/Model-Siamese%20CNN-blueviolet" alt="Siamese CNN" />
 
 </p>
 
@@ -30,13 +30,13 @@
 
 <p>
 
-  <img src="https\://img.shields.io/badge/Task-Face%20Verification-success" alt="Face Verification" />
+  <img src="https://img.shields.io/badge/Task-Face%20Verification-success" alt="Face Verification" />
 
-  <img src="https\://img.shields.io/badge/Detection-YuNet%20%7C%20Viola--Jones-informational" alt="Detection" />
+  <img src="https://img.shields.io/badge/Detection-YuNet%20%7C%20Viola--Jones-informational" alt="Detection" />
 
-  <img src="https\://img.shields.io/badge/Embedding-128--Dimensional-orange" alt="128D Embeddings" />
+  <img src="https://img.shields.io/badge/Embedding-128--Dimensional-orange" alt="128D Embeddings" />
 
-  <img src="https\://img.shields.io/badge/Status-Academic%20Project-lightgrey" alt="Project Status" />
+  <img src="https://img.shields.io/badge/Status-Academic%20Project-lightgrey" alt="Project Status" />
 
 </p>
 
@@ -1529,7 +1529,7 @@ Streamlit will print a local URL, normally:
 
 ```text
 
-http\://localhost:8501
+http://localhost:8501
 
 ```
 
